@@ -1,0 +1,303 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 1.875em/1.38 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+.container-3 p {
+  margin-bottom: 1em;
+}
+
+.container .container {
+  float: left;
+  width: 30%;
+  height: 500px;
+  margin: 25px 0 0 2.5%;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.image {
+  display: block;
+  float: left;
+  width: 354px;
+  height: auto;
+  overflow: hidden;
+}
+
+._button {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  height: 30px;
+  margin: auto 0;
+  background-color: rgb(0, 0, 0);
+  font: normal 0.467em/2.5 OCRAStd;
+  text-align: center;
+  color: rgb(83, 101, 255);
+}
+
+._button:hover {
+  color: rgb(230, 230, 230);
+}
+
+.container-1 {
+  position: relative;
+  float: left;
+  z-index: 23;
+  width: 100%;
+  height: 730px;
+  min-height: 600px;
+  max-height: 800px;
+  background: rgb(102, 102, 102);
+  background: -webkit-linear-gradient(326deg, rgb(102, 102, 102) 4.285714285714286%, rgb(204, 204, 204) 32.38095238095238%, rgb(204, 204, 204) 60.952380952380956%, rgb(102, 102, 102) 89.52380952380953%) rgb(128, 128, 128);
+  background:    -moz-linear-gradient(326deg, rgb(102, 102, 102) 4.285714285714286%, rgb(204, 204, 204) 32.38095238095238%, rgb(204, 204, 204) 60.952380952380956%, rgb(102, 102, 102) 89.52380952380953%) rgb(128, 128, 128);
+  background:      -o-linear-gradient(326deg, rgb(102, 102, 102) 4.285714285714286%, rgb(204, 204, 204) 32.38095238095238%, rgb(204, 204, 204) 60.952380952380956%, rgb(102, 102, 102) 89.52380952380953%) rgb(128, 128, 128);
+  background:     -ms-linear-gradient(326deg, rgb(102, 102, 102) 4.285714285714286%, rgb(204, 204, 204) 32.38095238095238%, rgb(204, 204, 204) 60.952380952380956%, rgb(102, 102, 102) 89.52380952380953%) rgb(128, 128, 128);
+  background:         linear-gradient(124deg, rgb(102, 102, 102) 4.285714285714286%, rgb(204, 204, 204) 32.38095238095238%, rgb(204, 204, 204) 60.952380952380956%, rgb(102, 102, 102) 89.52380952380953%) rgb(128, 128, 128);
+}
+
+.container-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 28;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.container-3 {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 18;
+  width: 100%;
+  height: 550px;
+  background: url('../images/futball.jpg') rgb(230, 230, 230);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+.container-4 {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 16;
+  width: 100%;
+  height: 500px;
+  background: rgb(186, 22, 46);
+  background: -webkit-linear-gradient(0deg, rgb(186, 22, 46) 32.61904761904762%, rgb(182, 204, 0) 33.095238095238095%, rgb(231, 255, 53) 70.23809523809523%, rgb(25, 25, 247) 70%) rgb(51, 51, 51);
+  background:    -moz-linear-gradient(0deg, rgb(186, 22, 46) 32.61904761904762%, rgb(182, 204, 0) 33.095238095238095%, rgb(231, 255, 53) 70.23809523809523%, rgb(25, 25, 247) 70%) rgb(51, 51, 51);
+  background:      -o-linear-gradient(0deg, rgb(186, 22, 46) 32.61904761904762%, rgb(182, 204, 0) 33.095238095238095%, rgb(231, 255, 53) 70.23809523809523%, rgb(25, 25, 247) 70%) rgb(51, 51, 51);
+  background:     -ms-linear-gradient(0deg, rgb(186, 22, 46) 32.61904761904762%, rgb(182, 204, 0) 33.095238095238095%, rgb(231, 255, 53) 70.23809523809523%, rgb(25, 25, 247) 70%) rgb(51, 51, 51);
+  background:         linear-gradient(450deg, rgb(186, 22, 46) 32.61904761904762%, rgb(182, 204, 0) 33.095238095238095%, rgb(231, 255, 53) 70.23809523809523%, rgb(25, 25, 247) 70%) rgb(51, 51, 51);
+}
+
+.container-5 {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 13;
+  width: 100%;
+  height: 550px;
+  background-color: rgb(230, 230, 230);
+}
+
+.element-1 {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto;
+  background: none, url('../images/linkedInLogoBlue.png') rgba(222, 222, 222, 0);
+  background-repeat: repeat, no-repeat;
+  background-size: auto auto, contain;
+  background-position: left top, center center;
+  background-attachment: scroll, scroll;
+}
+
+.element-1:hover {
+  background-image: url('../images/linkedInLogoBlack.png'), url('../images/linkedInLogoBlue.png');
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: center center, center center;
+}
+
+.element-2 {
+  float: left;
+  clear: both;
+  width: 80%;
+  height: 370px;
+  margin: 35px 0 0 10%;
+  border-radius: 10px 100px;
+  background: url('../images/background.jpg') rgb(222, 222, 222);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  box-shadow: -2px 1px 30px 3px rgba(51, 51, 51, 0.78);
+}
+
+.image-3 {
+  margin-left: 0.5618%;
+}
+
+.text-1 {
+  width: 50%;
+  min-height: 79px;
+  margin: 53px auto 0;
+  font-family: OCRAStd;
+  font-size: 1.667em;
+  font-weight: normal;
+  text-align: center;
+  color: rgb(72, 13, 202);
+}
+
+.text-10 {
+  float: left;
+  clear: both;
+  width: 96.9101123595%;
+  min-height: 14px;
+  margin: 17px 0 0 2.52809%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.text-11 {
+  float: left;
+  clear: both;
+  width: 51.9662921348%;
+  min-height: 14px;
+  margin: 13px 0 0 2.52809%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.text-12 {
+  float: left;
+  clear: both;
+  width: 51.9662921348%;
+  min-height: 14px;
+  margin: 33px 0 0 6.59235%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.text-2 {
+  float: left;
+  clear: both;
+  width: 72.5%;
+  min-height: 86px;
+  margin: 13px 0 0 13.75%;
+  border-radius: 10px;
+  box-shadow: -2px 2px 5px 2px rgb(98, 7, 7) inset;
+  font: normal 1.333em/2.5 OCRAStd;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(98, 7, 7);
+}
+
+.text-3 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 17;
+  width: 100%;
+  min-height: 165px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.48);
+  font-family: 'OCR A Std';
+  font-size: 0.533em;
+  text-align: center;
+  color: rgb(255, 152, 95);
+}
+
+.text-4 {
+  float: left;
+  width: 23.75%;
+  min-height: 28px;
+  margin: 53px 0 0 1.16667%;
+  font-family: LatinWide;
+  font-size: 1em;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+}
+
+.text-5 {
+  float: left;
+  width: 30.4166666666%;
+  min-height: 28px;
+  margin: 180px 0 0 10.83073%;
+  font-family: LatinWide;
+  font-size: 1em;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+}
+
+.text-6 {
+  float: left;
+  clear: both;
+  width: 36%;
+  min-height: 14px;
+  margin: 43px 0 0 1.40011%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.text-7 {
+  float: left;
+  clear: both;
+  width: 60.1123595505%;
+  min-height: 14px;
+  margin: 24px 0 0 1.40011%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.text-8 {
+  float: left;
+  clear: both;
+  width: 98.0337078651%;
+  min-height: 14px;
+  margin: 17px 0 0 1.40011%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.text-9 {
+  float: left;
+  clear: both;
+  width: 65.7303370786%;
+  min-height: 14px;
+  margin: 24px 0 0 4.75334%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.container ._button-1 {
+  left: 0;
+  z-index: 27;
+  border-right: 1px solid rgb(230, 230, 230);
+}
+
+.container ._button-2 {
+  left: 25%;
+  z-index: 26;
+  border-right: 1px solid rgb(230, 230, 230);
+  border-left: 1px solid rgb(230, 230, 230);
+}
+
+.container ._button-3 {
+  left: 50%;
+  z-index: 25;
+  border-right: 1px solid rgb(230, 230, 230);
+  border-left: 1px solid rgb(230, 230, 230);
+}
+
+.container ._button-4 {
+  left: 75%;
+  z-index: 24;
+  border-left: 1px solid rgb(230, 230, 230);
+}
