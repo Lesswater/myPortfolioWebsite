@@ -16,6 +16,11 @@ body {
   border: 2px solid rgb(0, 0, 0);
 }
 
+.element {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .image {
   display: block;
   float: left;
@@ -26,16 +31,12 @@ body {
 
 ._button {
   display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 25%;
+  float: left;
+  width: 100%;
   height: 30px;
-  margin: auto 0;
-  background-color: rgb(0, 0, 0);
-  font: normal 0.467em/2.5 OCRAStd;
+  font: normal 0.667em/1.8 OCRAStd;
   text-align: center;
-  color: rgb(83, 101, 255);
+  color: rgb(72, 13, 202);
 }
 
 ._button:hover {
@@ -60,13 +61,11 @@ body {
 
 .container-2 {
   position: fixed;
-  top: 0;
+  top: 50px;
   left: 0;
-  right: 0;
   z-index: 28;
-  width: 100%;
-  height: 30px;
-  margin: 0 auto;
+  width: 15%;
+  height: 180px;
 }
 
 .container-3 {
@@ -110,8 +109,7 @@ body {
 .element-1 {
   width: 54px;
   height: 54px;
-  margin: 0 auto;
-  background: none, url('../images/linkedInLogoBlue.png') rgba(222, 222, 222, 0);
+  background: none, url('../images/linkedInLogoBlack.png') rgba(222, 222, 222, 0);
   background-repeat: repeat, no-repeat;
   background-size: auto auto, contain;
   background-position: left top, center center;
@@ -119,18 +117,16 @@ body {
 }
 
 .element-1:hover {
-  background-image: url('../images/linkedInLogoBlack.png'), url('../images/linkedInLogoBlue.png');
+  background-image: url('../images/linkedInLogoBlue.png'), url('../images/linkedInLogoBlack.png');
   background-repeat: no-repeat, no-repeat;
   background-size: contain, contain;
   background-position: center center, center center;
 }
 
 .element-2 {
-  float: left;
-  clear: both;
   width: 80%;
   height: 370px;
-  margin: 35px 0 0 10%;
+  margin-top: 10px;
   border-radius: 10px 100px;
   background: url('../images/background.jpg') rgb(222, 222, 222);
   background-repeat: no-repeat;
@@ -146,7 +142,7 @@ body {
 .text-1 {
   width: 50%;
   min-height: 79px;
-  margin: 53px auto 0;
+  margin: 15px auto 0;
   font-family: OCRAStd;
   font-size: 1.667em;
   font-weight: normal;
@@ -185,11 +181,9 @@ body {
 }
 
 .text-2 {
-  float: left;
-  clear: both;
   width: 72.5%;
   min-height: 86px;
-  margin: 13px 0 0 13.75%;
+  margin: 35px auto 0;
   border-radius: 10px;
   box-shadow: -2px 2px 5px 2px rgb(98, 7, 7) inset;
   font: normal 1.333em/2.5 OCRAStd;
@@ -276,28 +270,9 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.container ._button-1 {
-  left: 0;
-  z-index: 27;
-  border-right: 1px solid rgb(230, 230, 230);
-}
-
-.container ._button-2 {
-  left: 25%;
-  z-index: 26;
-  border-right: 1px solid rgb(230, 230, 230);
-  border-left: 1px solid rgb(230, 230, 230);
-}
-
-.container ._button-3 {
-  left: 50%;
-  z-index: 25;
-  border-right: 1px solid rgb(230, 230, 230);
-  border-left: 1px solid rgb(230, 230, 230);
-}
-
+.container ._button-2,
+.container ._button-3,
 .container ._button-4 {
-  left: 75%;
-  z-index: 24;
-  border-left: 1px solid rgb(230, 230, 230);
+  clear: both;
+  margin-top: 20px;
 }
