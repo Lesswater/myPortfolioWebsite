@@ -4,7 +4,6 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	margin-top: 0px;
-	padding-top: 1px;
 	padding-right: 1px;
 	padding-bottom: 1px;
 	padding-left: 1px;
@@ -16,17 +15,37 @@ body {
 	margin-left: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
+	display: block;
+	height: 100vh;
+	padding-bottom: 1px;
 	padding-top: 1px;
 	padding-left: 1px;
 	padding-right: 1px;
-	padding-bottom: 1px;
-	display: block;
-	height: 100vh;
 }
 .aboutSect {
-	background-color: #B3DAF1;
 	margin-top: 0px;
 	padding-top: 1px;
+	height: 100vh;
+	display: block;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	background-image: url(../images/futball.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center 0%;
+}
+.expSect {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	background-color: #95BD6E;
 	height: 100vh;
 }
 h1 {
@@ -34,20 +53,23 @@ h1 {
 	font-style: normal;
 	font-weight: 400;
 	text-align: center;
+	margin-top: 8%;
 }
 h2 {
 	text-align: center;
 }
 .navBar {
-	background-color: #B3DAF1;
+	background-color: #232538;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
 	padding-left: 1px;
-	padding-top: 1px;
 	padding-right: 1px;
 	padding-bottom: 1px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
 }
 .navbar-header   {
 	display: block;
@@ -72,10 +94,16 @@ h2 {
 	padding-top: 15px;
 	padding-bottom: 10px;
 	text-decoration: none;
-	color: #333333;
+	color: #C3E8F3;
 }
 .navListItem:hover {
 	color: #FFFFFF;
+	text-decoration: none;
+}
+.navListItem:visited {
+	background-color: #23A5F2;
+}
+.container-fluid .navbar-header .navListItem.active {
 	text-decoration: none;
 }
 .header {
