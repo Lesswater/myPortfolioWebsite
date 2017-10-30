@@ -1,9 +1,33 @@
 @charset "UTF-8";
 body {
-	background-color: #AF8C59;
-	font-family: electrolize;
+	font-family: play;
 	font-style: normal;
 	font-weight: 400;
+	margin-top: 0px;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	height: 100vh;
+}
+.mainSect {
+	background-color: #AF8C59;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	display: block;
+	height: 100vh;
+}
+.aboutSect {
+	background-color: #B3DAF1;
+	margin-top: 0px;
+	padding-top: 1px;
+	height: 100vh;
 }
 h1 {
 	font-family: righteous;
@@ -13,6 +37,25 @@ h1 {
 }
 h2 {
 	text-align: center;
+}
+.navBar {
+	background-color: #B3DAF1;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-left: 1px;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+}
+.navbar-header   {
+	display: block;
+	float: left;
+	font-family: righteous;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
 }
 .navList {
 	margin: 0;
@@ -29,15 +72,7 @@ h2 {
 	padding-top: 15px;
 	padding-bottom: 10px;
 	text-decoration: none;
-}
-.navbar-header   {
-	display: block;
-	float: left;
-	font-family: righteous;
-	font-style: normal;
-	font-weight: 400;
-	color: #000000;
-	text-decoration: none;
+	color: #333333;
 }
 .navListItem:hover {
 	color: #FFFFFF;
