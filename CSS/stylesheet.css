@@ -15,12 +15,12 @@ body {
 	margin-left: 0px;
 	margin-bottom: 0px;
 	margin-right: 0px;
-	display: block;
 	height: 100vh;
 	padding-bottom: 1px;
 	padding-top: 1px;
 	padding-left: 1px;
 	padding-right: 1px;
+	display: block;
 }
 .aboutSect {
 	margin-top: 0px;
@@ -30,7 +30,6 @@ body {
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-bottom: 1px;
-	background-image: url(../images/futball.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -47,6 +46,21 @@ body {
 	padding-left: 1px;
 	background-color: #95BD6E;
 	height: 100vh;
+	display: block;
+}
+.projSect {
+	background-color: #333333;
+	height: 100vh;
+	display: block;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	color: #AF8C59;
 }
 h1 {
 	font-family: 'Righteous', cursive;
@@ -113,4 +127,19 @@ h2 {
 	border-radius: 50px 100px 50px 0px;
 	max-width: 95%;
 	max-height: 30%;
+}
+.card1 {
+	text-align: left;
+	border: thick ridge #95BD6E;
+	width: 40%;
+	height: 50%;
+	margin-left: 5%;
+}
+.cardContent {
+	text-align: center;
+}
+.cardVid {
+	width: 95%;
+	text-align: center;
+	height: 280px;
 }
