@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-	font-family: play;
+	font-family: 'Electrolize', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	margin-top: 0px;
@@ -49,7 +49,7 @@ body {
 	height: 100vh;
 }
 h1 {
-	font-family: righteous;
+	font-family: 'Righteous', cursive;
 	font-style: normal;
 	font-weight: 400;
 	text-align: center;
@@ -74,7 +74,7 @@ h2 {
 .navbar-header   {
 	display: block;
 	float: left;
-	font-family: righteous;
+	font-family: 'Righteous', cursive;
 	font-style: normal;
 	font-weight: 400;
 	text-decoration: none;
