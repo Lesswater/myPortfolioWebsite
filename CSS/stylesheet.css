@@ -18,22 +18,21 @@ body {
 	height: 100vh;
 	padding-bottom: 1px;
 	padding-top: 1px;
-	padding-left: 1px;
-	padding-right: 1px;
 	display: block;
+	width: 100%;
 }
 .aboutSect {
 	margin-top: 0px;
 	padding-top: 1px;
 	height: 100vh;
 	display: block;
-	padding-left: 1px;
-	padding-right: 1px;
 	padding-bottom: 1px;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center 0%;
+	background-image: url(../images/freeKick.jpg);
+	width: 100%;
 }
 .expSect {
 	margin-top: 0px;
@@ -41,12 +40,12 @@ body {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	padding-top: 1px;
-	padding-right: 1px;
 	padding-bottom: 1px;
-	padding-left: 1px;
 	background-color: #95BD6E;
 	height: 100vh;
 	display: block;
+	width: 100%;
+	top: 0px;
 }
 .projSect {
 	background-color: #333333;
@@ -57,10 +56,9 @@ body {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	padding-top: 1px;
-	padding-right: 1px;
 	padding-bottom: 1px;
-	padding-left: 1px;
 	color: #AF8C59;
+	width: 100%;
 }
 h1 {
 	font-family: 'Righteous', cursive;
@@ -132,7 +130,7 @@ h2 {
 	text-align: left;
 	border: thick ridge #95BD6E;
 	width: 40%;
-	height: 50%;
+	height: 55%;
 	margin-left: 5%;
 }
 .cardContent {
@@ -142,4 +140,10 @@ h2 {
 	width: 95%;
 	text-align: center;
 	height: 280px;
+}
+.button {
+	color: #000000;
+	border-radius: 10px;
+	text-align: left;
+	display: inline;
 }
