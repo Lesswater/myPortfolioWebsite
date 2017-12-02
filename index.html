@@ -6,33 +6,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JDM - Computer Science</title>
 <link rel="icon" href="images/background.jpg">
-<link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<link href="CSS/stylesheet.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Electrolize|Righteous" rel="stylesheet">
+<link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="CSS/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	
-<nav class="navbar navBar">
-    <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-    	<div class="navbar-header">
-      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-			<a class="navListItem" href="#mainSect">J.M.</a>
-    	</div>
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-      		<div class="collapse navbar-collapse" id="defaultNavbar1">
-       			<ul class="navList">
-					<li class="navListItem" onClick="window.location='#aboutSect';">ABOUT</li>
-					<li class="navListItem" onClick="window.location='#expSect';">EXPERIENCE</li>
-					<li class="navListItem" onClick="window.location='#eduSect';">EDUCATION</li>
-					<li class="navListItem" onClick="window.location='#projSect';">PORTFOLIO</li>
-			  	</ul>
-			</div>
-	    <!-- /.navbar-collapse -->
-  		</div>
-	  <!-- /.container-fluid -->
+
+<nav class="navbar navbar-default navBar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navList" id="defaultNavbar1">
+   	  <ul class="nav navbar-nav navListItem">
+    		<li><a id="aboutSectItem" href="#aboutSect">ABOUT</a></li>
+    		<li><a id="expSectItem" href="#expSect">EXPERIENCE</a></li>
+    		<li><a id="eduSectItem" href="#eduSect">EDUCATION</a></li>
+    		<li><a id="projSectItem" href="#projSect">PORTFOLIO</a></li>
+    		<li><a id="contSectItem" href="#contSect">CONTACT</a></li>
+    	</ul>
+    </div>
+    
+    </div>
+	</div>	  
 </nav>
 
 <section class="mainSect" id="mainSect">
@@ -43,21 +43,30 @@
 </section>
  
 <section class="aboutSect" id="aboutSect">
+	<div class="card2">
+	<p>More to Come Soon!</p>
+	</div>
 </section>
  
-<section class="expSect" id="expSect">
-</section>
+<!-- <section class="expSect" id="expSect">
+</section> -->
  
 <section class="projSect" id="projSect">
- <h2>Portfolio</h2>
+ <h2 id="portTitle">Portfolio</h2>
  <div class="card1">
  	<div class="cardContent">
   	<h3>Elevator Pitch</h3>
 	<video class="cardVid" src="video/myFoodElevatorPitch.mp4" type="video/mp4" controls>
 	Your browser does not support the video tag.</video>
-	<button class="button" onclick="window.open(href='myFoodApp/interactive.html');">See Interactive Mockup</button>
+	<input type="button" value="See Interactive Mockup" id="cardButton" onclick="window.open(href='myFoodApp/interactive.html');"/>
     </div>
 	</div>
+</section>
+
+<section class="contSect" id="contSect">
+	<h2 id="contTitle">Contact</h2>
+	<p>Email: j.moreland(at)queensu.ca</p>
+	<input type="button" id="linkedInButton" onclick="window.open('http://www.linkedin.com/in/jackson-moreland')"/>
 </section>
  
 <script src="js/jquery-1.11.3.min.js"></script>

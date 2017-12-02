@@ -1,0 +1,7 @@
+@charset "UTF-8";
+.mainImage {
+	border-radius: 5%;
+}
+
+@media (min-width: 375px){
+}

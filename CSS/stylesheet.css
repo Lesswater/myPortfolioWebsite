@@ -31,8 +31,11 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center 0%;
-	background-image: url(../images/freeKick.jpg);
 	width: 100%;
+	background-image: -webkit-linear-gradient(270deg,rgba(25,122,213,1.00) 15.15%,rgba(255,255,255,1.00) 46.26%,rgba(34,37,55,1.00) 78.25%);
+	background-image: -moz-linear-gradient(270deg,rgba(25,122,213,1.00) 15.15%,rgba(255,255,255,1.00) 46.26%,rgba(34,37,55,1.00) 78.25%);
+	background-image: -o-linear-gradient(270deg,rgba(25,122,213,1.00) 15.15%,rgba(255,255,255,1.00) 46.26%,rgba(34,37,55,1.00) 78.25%);
+	background-image: linear-gradient(180deg,rgba(25,122,213,1.00) 15.15%,rgba(255,255,255,1.00) 46.26%,rgba(34,37,55,1.00) 78.25%);
 }
 .expSect {
 	margin-top: 0px;
@@ -60,6 +63,18 @@ body {
 	color: #AF8C59;
 	width: 100%;
 }
+.contSect {
+	background-color: #AF8C59;
+	height: 50vh;
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	display: block;
+}
 h1 {
 	font-family: 'Righteous', cursive;
 	font-style: normal;
@@ -82,6 +97,7 @@ h2 {
 	position: fixed;
 	width: 100%;
 	top: 0px;
+	border-width: 0pt;
 }
 .navbar-header   {
 	display: block;
@@ -91,14 +107,15 @@ h2 {
 	font-weight: 400;
 	text-decoration: none;
 }
-.navList {
+.navList   {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	overflow: hidden;
 	height: 100%;
+	color: #C3E8F3;
 }
-.navListItem {
+#aboutSectItem    {
 	float: left;
 	display: block;
 	padding-left: 15px;
@@ -108,14 +125,66 @@ h2 {
 	text-decoration: none;
 	color: #C3E8F3;
 }
-.navListItem:hover {
+#aboutSectItem:hover {
 	color: #FFFFFF;
 	text-decoration: none;
 }
-.navListItem:visited {
-	background-color: #23A5F2;
+#expSectItem          {
+	float: left;
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	color: #C3E8F3;
 }
-.container-fluid .navbar-header .navListItem.active {
+#expSectItem:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#eduSectItem {
+	float: left;
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	color: #C3E8F3;
+}
+#eduSectItem:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#projSectItem {
+	float: left;
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	color: #C3E8F3;
+}
+#projSectItem:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.nav.navbar-nav.navListItem li #expSectItem {
+}
+#contSectItem {
+	float: left;
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	color: #C3E8F3;
+}
+#contSectItem:hover {
+	color: #FFFFFF;
 	text-decoration: none;
 }
 .header {
@@ -128,10 +197,18 @@ h2 {
 }
 .card1 {
 	text-align: left;
-	border: thick ridge #95BD6E;
+	border: 8pt ridge #95BD6E;
 	width: 40%;
-	height: 55%;
+	height: 56%;
 	margin-left: 5%;
+	border-radius: 15px;
+	margin-top: 5%;
+}
+.card2 {
+	font-family: electrolize;
+	font-style: normal;
+	font-size: 20pt;
+	color: #FF0004;
 }
 .cardContent {
 	text-align: center;
@@ -141,9 +218,31 @@ h2 {
 	text-align: center;
 	height: 280px;
 }
-.button {
+#portTitle {
+	margin-top: 5%;
+}
+#contTitle {
+	margin-top: 5%;
+}
+#cardButton {
 	color: #000000;
 	border-radius: 10px;
 	text-align: left;
 	display: inline;
+	font-style: normal;
+	font-weight: 400;
+	font-family: righteous;
+	background-color: #95BD6E;
+	-webkit-box-shadow: 0px 0px;
+	box-shadow: 0px 0px;
+	border-width: 0;
+	margin-top: 5px;
+}
+#linkedInButton {
+	background-image: url(../images/linkedInLogoBlue.png);
+	width: 60px;
+	height: 60px;
+	border-width: 0pt;
+	border-radius: 10px;
+	background-size: cover;
 }
