@@ -196,15 +196,26 @@ h2 {
 	max-height: 30%;
 }
 .card1 {
-	text-align: left;
-	border: 8pt ridge #95BD6E;
+	border: 8pt ridge #AF8C59;
 	width: 40%;
 	height: 56%;
-	margin-left: 5%;
+	margin-left: 2.5%;
 	border-radius: 15px;
 	margin-top: 5%;
+	float: left;
+	left: 5%;
 }
 .card2 {
+	text-align: center;
+	border: 8pt ridge #AF8C59;
+	width: 40%;
+	height: 56%;
+	border-radius: 15px;
+	margin-top: 5%;
+	float: right;
+	margin-right: 2.5%;
+}
+.aboutContent {
 	font-family: electrolize;
 	font-style: normal;
 	font-size: 20pt;
@@ -227,7 +238,6 @@ h2 {
 #cardButton {
 	color: #000000;
 	border-radius: 10px;
-	text-align: left;
 	display: inline;
 	font-style: normal;
 	font-weight: 400;
@@ -236,7 +246,7 @@ h2 {
 	-webkit-box-shadow: 0px 0px;
 	box-shadow: 0px 0px;
 	border-width: 0;
-	margin-top: 5px;
+	margin-left: 43%;
 }
 #linkedInButton {
 	background-image: url(../images/linkedInLogoBlue.png);
@@ -245,4 +255,23 @@ h2 {
 	border-width: 0pt;
 	border-radius: 10px;
 	background-size: cover;
+}
+#linkedInButton:hover {
+	background-image: url(../images/linkedInLogoBlack.png);
+	width: 60px;
+	height: 60px;
+	border-width: 0pt;
+	border-radius: 10px;
+	background-size: cover;
+}
+#Logo {
+	border-radius: 38px;
+}
+#email {
+	color: #C3E8F3;
+	font-family: electrolize;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	font-size: 50pt;
 }
