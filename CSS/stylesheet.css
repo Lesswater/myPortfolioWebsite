@@ -9,6 +9,43 @@ body {
 	padding-left: 1px;
 	height: 100vh;
 }
+
+h2 {
+	text-align: center;
+}
+
+.header {
+	text-align: center;
+	margin-top: 8%;
+}
+.mainImage {
+	border-radius: 50px 100px 50px 0px;
+	max-width: 95%;
+	max-height: 30%;
+}
+
+#nameTitle {
+	font-family: 'Righteous', cursive;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	position: relative;
+	animation-name: discolour;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	z-index: 30;
+}
+
+@keyframes discolour {
+    0% {top: 0%; color: red;}
+    15% {color: yellow;}
+    30% {color: green;}
+    45% {color: blue;}
+    60% {color: green;}
+    75% {color: yellow;}
+    100% {top: 8%; color: red;}
+}
+
 .mainSect {
 	background-color: #AF8C59;
 	margin-top: 0px;
@@ -32,12 +69,22 @@ body {
 	background-attachment: fixed;
 	background-position: center 0%;
 	width: 100%;
-	background-image: -webkit-linear-gradient(270deg,rgba(25,122,213,1.00) 15.15%,rgba(255,255,255,1.00) 46.26%,rgba(34,37,55,1.00) 78.25%);
-	background-image: -moz-linear-gradient(270deg,rgba(25,122,213,1.00) 15.15%,rgba(255,255,255,1.00) 46.26%,rgba(34,37,55,1.00) 78.25%);
-	background-image: -o-linear-gradient(270deg,rgba(25,122,213,1.00) 15.15%,rgba(255,255,255,1.00) 46.26%,rgba(34,37,55,1.00) 78.25%);
-	background-image: linear-gradient(180deg,rgba(25,122,213,1.00) 15.15%,rgba(255,255,255,1.00) 46.26%,rgba(34,37,55,1.00) 78.25%);
+	background-image: url(../FanArt/kingC3PO.jpg);
 }
 .expSect {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #95BD6E;
+	height: 100vh;
+	display: block;
+	width: 100%;
+	top: 0px;
+}
+.eduSect {
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -75,16 +122,7 @@ body {
 	padding-bottom: 1px;
 	display: block;
 }
-h1 {
-	font-family: 'Righteous', cursive;
-	font-style: normal;
-	font-weight: 400;
-	text-align: center;
-	margin-top: 8%;
-}
-h2 {
-	text-align: center;
-}
+
 .navBar {
 	background-color: #232538;
 	margin-top: 0px;
@@ -129,7 +167,7 @@ h2 {
 	color: #FFFFFF;
 	text-decoration: none;
 }
-#expSectItem          {
+#expSectItem {
 	float: left;
 	display: block;
 	padding-left: 15px;
@@ -171,8 +209,10 @@ h2 {
 	color: #FFFFFF;
 	text-decoration: none;
 }
+
 .nav.navbar-nav.navListItem li #expSectItem {
 }
+
 #contSectItem {
 	float: left;
 	display: block;
@@ -186,14 +226,6 @@ h2 {
 #contSectItem:hover {
 	color: #FFFFFF;
 	text-decoration: none;
-}
-.header {
-	text-align: center;
-}
-.mainImage {
-	border-radius: 50px 100px 50px 0px;
-	max-width: 95%;
-	max-height: 30%;
 }
 .card1 {
 	border: 8pt ridge #AF8C59;
