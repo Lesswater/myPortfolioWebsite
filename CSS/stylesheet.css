@@ -1,6 +1,5 @@
 @charset "UTF-8";
 body {
-	font-family: 'Electrolize', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	margin-top: 0px;
@@ -8,10 +7,24 @@ body {
 	padding-bottom: 1px;
 	padding-left: 1px;
 	height: 100vh;
+	width: 100vw;
+}
+
+a {
+	color: rgba(0,0,0,1.00);
+	text-decoration: none;
+	font-family: righteous;
+	font-style: normal;
+	font-weight: 400;
+}
+a:hover {
+	text-decoration: none;
+	color: rgba(255,255,255,1.00);
 }
 
 h2 {
 	text-align: center;
+	color: rgba(28,107,221,1.00);
 }
 
 .header {
@@ -31,23 +44,19 @@ h2 {
 	text-align: center;
 	position: relative;
 	animation-name: discolour;
-	animation-duration: 2s;
+	animation-duration: 3s;
 	animation-fill-mode: both;
-	z-index: 30;
+	z-index: 0;
 }
 
 @keyframes discolour {
-    0% {top: 0%; color: red;}
-    15% {color: yellow;}
-    30% {color: green;}
-    45% {color: blue;}
-    60% {color: green;}
-    75% {color: yellow;}
-    100% {top: 8%; color: red;}
+    0% {top: 0%; color: #1C6BDD;}
+	25% {color: #1C6BDD;}
+    100% {top: 12%; color: white;}
 }
 
 .mainSect {
-	background-color: #AF8C59;
+	background-color: #333333;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-bottom: 0px;
@@ -56,33 +65,23 @@ h2 {
 	padding-bottom: 1px;
 	padding-top: 1px;
 	display: block;
-	width: 100%;
+	width: 100vw;
+	text-align: center;
+	z-index: -1;
 }
 .aboutSect {
 	margin-top: 0px;
 	padding-top: 1px;
-	height: 100vh;
+	height: 80vh;
 	display: block;
 	padding-bottom: 1px;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center 0%;
-	width: 100%;
-	background-image: url(../FanArt/kingC3PO.jpg);
-}
-.expSect {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	background-color: #95BD6E;
-	height: 100vh;
-	display: block;
-	width: 100%;
-	top: 0px;
+	width: 100vw;
+	background-image: url(../images/pitchParallax.jpg);
+	text-align: center;
 }
 .eduSect {
 	margin-top: 0px;
@@ -91,11 +90,29 @@ h2 {
 	margin-left: 0px;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	background-color: #95BD6E;
-	height: 100vh;
+	background-color: #333333;
+	height: 90vh;
 	display: block;
-	width: 100%;
+	width: 100vw;
 	top: 0px;
+	text-align: center;
+}
+.expSect {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	height: 80vh;
+	display: block;
+	width: 100vw;
+	top: 0px;
+	background-image: url(../images/pitchParallax.jpg);
+	background-attachment: fixed;
+	background-position: center 0%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 .projSect {
 	background-color: #333333;
@@ -111,9 +128,9 @@ h2 {
 	width: 100%;
 }
 .contSect {
-	background-color: #AF8C59;
-	height: 50vh;
-	width: 100%;
+	background-color: #333333;
+	height: 35vh;
+	width: 100vw;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -121,10 +138,11 @@ h2 {
 	padding-top: 1px;
 	padding-bottom: 1px;
 	display: block;
+	text-align: left;
 }
 
 .navBar {
-	background-color: #232538;
+	background-color: #1C6BDD;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-bottom: 0px;
@@ -135,7 +153,10 @@ h2 {
 	position: fixed;
 	width: 100%;
 	top: 0px;
-	border-width: 0pt;
+	z-index: 30;
+	border-width: 1pt;
+	border-color: rgba(28,107,221,1.00);
+	border-radius: 0px;
 }
 .navbar-header   {
 	display: block;
@@ -161,7 +182,8 @@ h2 {
 	padding-top: 15px;
 	padding-bottom: 10px;
 	text-decoration: none;
-	color: #C3E8F3;
+	color: #000000;
+	font-size: 12pt;
 }
 #aboutSectItem:hover {
 	color: #FFFFFF;
@@ -175,7 +197,8 @@ h2 {
 	padding-top: 15px;
 	padding-bottom: 10px;
 	text-decoration: none;
-	color: #C3E8F3;
+	color: #000000;
+	font-size: 12pt;
 }
 #expSectItem:hover {
 	color: #FFFFFF;
@@ -189,7 +212,8 @@ h2 {
 	padding-top: 15px;
 	padding-bottom: 10px;
 	text-decoration: none;
-	color: #C3E8F3;
+	color: #000000;
+	font-size: 12pt;
 }
 #eduSectItem:hover {
 	color: #FFFFFF;
@@ -203,7 +227,8 @@ h2 {
 	padding-top: 15px;
 	padding-bottom: 10px;
 	text-decoration: none;
-	color: #C3E8F3;
+	color: #000000;
+	font-size: 12pt;
 }
 #projSectItem:hover {
 	color: #FFFFFF;
@@ -221,11 +246,23 @@ h2 {
 	padding-top: 15px;
 	padding-bottom: 10px;
 	text-decoration: none;
-	color: #C3E8F3;
+	color: #000000;
+	font-size: 12pt;
 }
 #contSectItem:hover {
 	color: #FFFFFF;
 	text-decoration: none;
+}
+.imgContainer {
+	width: 25vw;
+	margin-top: 10vh;
+}
+.Logo {
+	border-radius: 38px;
+	padding-top: 5px;
+	vertical-align: middle;
+	margin-top: 5vh;
+	width: 30vw;
 }
 .card1 {
 	border: 8pt ridge #AF8C59;
@@ -264,9 +301,6 @@ h2 {
 #portTitle {
 	margin-top: 5%;
 }
-#contTitle {
-	margin-top: 5%;
-}
 #cardButton {
 	color: #000000;
 	border-radius: 10px;
@@ -296,14 +330,17 @@ h2 {
 	border-radius: 10px;
 	background-size: cover;
 }
-#Logo {
-	border-radius: 38px;
-}
-#email {
-	color: #C3E8F3;
-	font-family: electrolize;
+.contBtns    {
 	font-style: normal;
 	font-weight: 400;
-	text-align: center;
-	font-size: 50pt;
+	color: #FFFFFF;
+	background-color: #23A5F2;
+	border-width: medium;
+	border-radius: 10px;
+	border-color: #23A5F2;
+	margin-right: 20px;
+	margin-top: 50px;
+}
+.contBtns:hover {
+	text-decoration: none;
 }
