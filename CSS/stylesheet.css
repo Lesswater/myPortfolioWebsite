@@ -1,13 +1,14 @@
 @charset "UTF-8";
-body {
-	font-style: normal;
-	font-weight: 400;
-	margin-top: 0px;
-	padding-right: 1px;
-	padding-bottom: 1px;
-	padding-left: 1px;
-	height: 100vh;
-	width: 100vw;
+
+* {
+	font-family: 'Righteous';
+	margin: 0px;
+	padding: 0px;
+}
+
+h2 {
+	text-align: center;
+	color: rgba(28,107,221,1.00);
 }
 
 a {
@@ -22,56 +23,47 @@ a:hover {
 	color: rgba(255,255,255,1.00);
 }
 
-h2 {
+.mainSect {
+	height: 100vh;
+	background-color: #333333;
 	text-align: center;
-	color: rgba(28,107,221,1.00);
-}
-
-.header {
-	text-align: center;
-	margin-top: 8%;
 }
 .mainImage {
-	border-radius: 50px 100px 50px 0px;
-	max-width: 95%;
-	max-height: 30%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 70vw;
+	height: 40vh;
+	border-radius: 2vw;
 }
 
 #nameTitle {
-	font-family: 'Righteous', cursive;
-	font-style: normal;
 	font-weight: 400;
 	text-align: center;
 	position: relative;
+	top: 5%;
 	animation-name: discolour;
 	animation-duration: 3s;
 	animation-fill-mode: both;
 	z-index: 0;
+	font-size: 8vw;
+}
+#caption {
+	position: relative;
+	top: 65vh;
+	font-size: 3vw;
 }
 
 @keyframes discolour {
-    0% {top: 0%; color: #1C6BDD;}
+    0% {top: 0vh; color: #1C6BDD;}
 	25% {color: #1C6BDD;}
-    100% {top: 12%; color: white;}
+    100% {top: 12vh; color: white;}
 }
 
-.mainSect {
-	background-color: #333333;
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	height: 100vh;
-	padding-bottom: 1px;
-	padding-top: 1px;
-	display: block;
-	width: 100vw;
-	text-align: center;
-	z-index: -1;
-}
 .aboutSect {
-	margin-top: 0px;
-	padding-top: 1px;
 	height: 80vh;
 	display: block;
 	padding-bottom: 1px;
@@ -79,34 +71,35 @@ h2 {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center 0%;
-	width: 100vw;
 	background-image: url(../images/pitchParallax.jpg);
 	text-align: center;
 }
+#aboutSectItem    {
+	float: left;
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 12pt;
+}
+#aboutSectItem:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
 .eduSect {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-top: 1px;
-	padding-bottom: 1px;
 	background-color: #333333;
 	height: 90vh;
 	display: block;
-	width: 100vw;
 	top: 0px;
 	text-align: center;
 }
 .expSect {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-top: 1px;
-	padding-bottom: 1px;
 	height: 80vh;
 	display: block;
-	width: 100vw;
 	top: 0px;
 	background-image: url(../images/pitchParallax.jpg);
 	background-attachment: fixed;
@@ -118,25 +111,11 @@ h2 {
 	background-color: #333333;
 	height: 100vh;
 	display: block;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-top: 1px;
-	padding-bottom: 1px;
 	color: #AF8C59;
-	width: 100%;
 }
 .contSect {
 	background-color: #333333;
 	height: 35vh;
-	width: 100vw;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-top: 1px;
-	padding-bottom: 1px;
 	display: block;
 	text-align: left;
 }
@@ -174,21 +153,7 @@ h2 {
 	height: 100%;
 	color: #C3E8F3;
 }
-#aboutSectItem    {
-	float: left;
-	display: block;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 15px;
-	padding-bottom: 10px;
-	text-decoration: none;
-	color: #000000;
-	font-size: 12pt;
-}
-#aboutSectItem:hover {
-	color: #FFFFFF;
-	text-decoration: none;
-}
+
 #expSectItem {
 	float: left;
 	display: block;
@@ -235,9 +200,6 @@ h2 {
 	text-decoration: none;
 }
 
-.nav.navbar-nav.navListItem li #expSectItem {
-}
-
 #contSectItem {
 	float: left;
 	display: block;
@@ -253,16 +215,12 @@ h2 {
 	color: #FFFFFF;
 	text-decoration: none;
 }
-.imgContainer {
-	width: 25vw;
-	margin-top: 10vh;
-}
 .Logo {
 	border-radius: 38px;
 	padding-top: 5px;
 	vertical-align: middle;
 	margin-top: 5vh;
-	width: 30vw;
+	width: 25vw;
 }
 .card1 {
 	border: 8pt ridge #AF8C59;
