@@ -120,23 +120,6 @@ a:hover {
 	text-align: left;
 }
 
-.navBar {
-	background-color: #1C6BDD;
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-bottom: 1px;
-	position: fixed;
-	width: 100%;
-	top: 0px;
-	z-index: 30;
-	border-width: 1pt;
-	border-color: rgba(28,107,221,1.00);
-	border-radius: 0px;
-}
 .navbar-header   {
 	display: block;
 	float: left;
@@ -145,13 +128,48 @@ a:hover {
 	font-weight: 400;
 	text-decoration: none;
 }
+.navBar {
+	/*background-color: #1C6BDD;*/
+	margin-top: 30vh;
+	margin-left: 1vw;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	position: fixed;
+	top: 0px;
+	z-index: 30;
+	border: 1px solid rgba(28,107,221,1.00);
+	border-radius: 10px;
+}
 .navList   {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 	list-style-type: none;
 	overflow: hidden;
-	height: 100%;
 	color: #C3E8F3;
+	text-align: center;
+}
+.navListItem {
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.contBtns    {
+	font-style: normal;
+	font-weight: 400;
+	color: #FFFFFF;
+	background-color: #23A5F2;
+	border-width: medium;
+	border-radius: 10px;
+	border-color: #23A5F2;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	width: 5vw;
+}
+.contBtns:hover {
+	text-decoration: none;
 }
 
 #expSectItem {
@@ -287,18 +305,4 @@ a:hover {
 	border-width: 0pt;
 	border-radius: 10px;
 	background-size: cover;
-}
-.contBtns    {
-	font-style: normal;
-	font-weight: 400;
-	color: #FFFFFF;
-	background-color: #23A5F2;
-	border-width: medium;
-	border-radius: 10px;
-	border-color: #23A5F2;
-	margin-right: 20px;
-	margin-top: 50px;
-}
-.contBtns:hover {
-	text-decoration: none;
 }
